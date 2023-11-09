@@ -31,3 +31,116 @@ Step 5: Develop dashboards which could be used to gain insights from sales data.
 ## Data Analysis Using Tableau
 
 <p  align="center"><a href="https://public.tableau.com/views/SocialNetworkAnaylsis/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"><img width="100%" src="https://raw.githubusercontent.com/robav112341/Social-Network-Data-Analysis/main/Instagram%20SQL%20-%20Data%20Analysis%20Project/Dashboard.png" /></a></p>
+
+### Queries:
+
+#### users :
+
+```sql
+SELECT
+*
+FROM
+users;
+```
+
+#### likes by username :
+
+```sql
+SELECT 
+    u.id,u.username, u.created_at, COUNT(*) as total_likes
+FROM
+    likes l
+        JOIN
+    users u ON l.user_id = u.id
+GROUP BY 1
+ORDER BY 2 DESC , 1 ASC;
+```
+
+#### most followed :
+
+```sql
+SELECT 
+    u.id,u.username, u.created_at, COUNT(*) AS total_followers
+FROM
+    follows f
+        JOIN
+    users u ON f.followee_id = u.id
+GROUP BY 2
+ORDER BY 4 DESC;
+```
+
+#### Users Activity :
+
+```sql
+SELECT 
+    u.id,u.username, COUNT(*) AS total_activity
+FROM
+    photos p
+        JOIN
+    users u ON p.user_id = u.id
+GROUP BY 1
+ORDER BY 3 DESC;
+```
+
+#### Tags :
+
+```sql
+SELECT 
+    p.user_id,t.tag_name
+FROM
+	photo_tags pt
+JOIN 
+	tags t on pt.tag_id = t.id
+JOIN
+	photos p on pt.photo_id = p.id
+ORDER BY 2 DESC;
+```
+
+#### Sign Ups :
+
+active :
+
+```sql
+SELECT 
+    *
+FROM
+    users
+WHERE
+	id IN ( 
+    SELECT 
+		user_id
+	FROM
+		PHOTOS
+	GROUP BY 1)
+GROUP BY 1
+ORDER BY 2 DESC;
+```
+
+non - active :
+
+```sql
+SELECT 
+    *
+FROM
+    users
+WHERE
+	id NOT IN ( 
+    SELECT 
+		user_id
+	FROM
+		PHOTOS
+	GROUP BY 1)
+GROUP BY 1
+ORDER BY 2 DESC;
+```
+
+#### photos :
+
+```sql
+SELECT 
+    *
+FROM
+    photos;
+```
+
+
