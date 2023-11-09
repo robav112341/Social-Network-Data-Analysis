@@ -19,4 +19,14 @@
 * <a href="https://public.tableau.com/app/profile/mrankitgupta">Tableau</a><a href="https://public.tableau.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/mrankitgupta/mrankitgupta/a768d6bf0a001f03327578ae12f8867e4056cbaf/tableau-software.svg" alt="tableau" width="45" height="30"/> </a> 
 
 ## Setup Process
+  
+Step 1: Download file: <code>[Instagram SQL - Database & Inserting Data.sql](https://github.com/robav112341/Social-Network-Data-Analysis/blob/main/Instagram%20SQL%20-%20Data%20Analysis%20Project/DB/Instagram%20SQL%20-%20Database%20%26%20Inserting%20Data.sql.sql)</code>
+
+Step 2: Open the file in MySQL, Extract data from the database using SQL.
+  
+Step 4: Connect Tableau with MySql database or Excel database.
+  
+Step 5: Develop dashboards which could be used to gain insights from sales data.
+
+## Data Analysis Using Tableau
 
