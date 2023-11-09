@@ -30,3 +30,4 @@ Step 5: Develop dashboards which could be used to gain insights from sales data.
 
 ## Data Analysis Using Tableau
 
+<p  align="center"><a href="https://public.tableau.com/views/SocialNetworkAnaylsis/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"><img width="100%" src="https://raw.githubusercontent.com/robav112341/Social-Network-Data-Analysis/main/Instagram%20SQL%20-%20Data%20Analysis%20Project/Dashboard.png" /></a></p>
