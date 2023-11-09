@@ -34,7 +34,7 @@ Step 5: Develop dashboards which could be used to gain insights from sales data.
 
 ### Queries:
 
-#### users :
+#### Users :
 
 ```sql
 SELECT
@@ -43,7 +43,7 @@ FROM
 users;
 ```
 
-#### likes by username :
+#### Likes by username :
 
 ```sql
 SELECT 
@@ -56,7 +56,7 @@ GROUP BY 1
 ORDER BY 2 DESC , 1 ASC;
 ```
 
-#### most followed :
+#### Most followed :
 
 ```sql
 SELECT 
@@ -134,7 +134,7 @@ GROUP BY 1
 ORDER BY 2 DESC;
 ```
 
-#### photos :
+#### Photos :
 
 ```sql
 SELECT 
