@@ -10,6 +10,8 @@
 
 ## Entity Relationship Diagram
 
+![image](https://github.com/robav112341/Social-Network-Data-Analysis/blob/main/Instagram%20SQL%20-%20Data%20Analysis%20Project/ERD.png)
+
 ## Technologies used 
 
 * <a href="https://www.mysql.com/">MySQL</a><a href="https://www.mysql.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="45" height="30"/> </a> 
